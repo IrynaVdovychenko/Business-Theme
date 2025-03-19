@@ -54,6 +54,9 @@
   border-radius: 3px;
   padding: 14px 43px;
 }
+.callback__request:hover {
+  box-shadow: 0 0 8px 0 #e7ad48;
+}
 
 .callback__name {
   position: relative;
