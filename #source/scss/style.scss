@@ -1,0 +1,65 @@
+@import "nullstyle.scss";
+@import "variables.scss";
+@import url('https://fonts.googleapis.com/css?family=Lato:regular&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,regular&display=swap');
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Black.woff2') format('woff2'),
+        url('../fonts/Gotham-Black.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Lato';
+    font-size: 13px;
+    color: #7b7b7b;
+    &._lock {
+        overflow: hidden;
+    }
+    & a {
+        color: #7b7b7b;
+    }
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;
+    @media (max-width: ($md2+px)){
+        //margin-top: 160px;
+    }
+}
+[class*=_container] {
+    @media (min-width: ($md2+px)){
+        max-width: $maxwidth + px;
+        margin: 0 auto;
+    }
+    @media (max-width: ($md2+px)){
+        padding: 0 10px;
+    }
+}
+
+@import "header.scss";
+@import "main.scss";
+@import "slider.scss";
+@import "footer.scss";
+
+h1 {
+    font-family: 'Gotham';
+    font-size: 35px;
+    letter-spacing: -0.88px;
+    text-transform: uppercase;
+    
+}
+h2 {
+    font-family: 'Gotham';
+    font-size: 30px;
+    letter-spacing: -0.75px;
+    text-transform: uppercase;
+}
