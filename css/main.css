@@ -26,10 +26,11 @@
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 33px;
+  justify-content: space-between;
 }
 .callback__data > div {
-  flex: 0 1 281px;
-  width: 24.017094%; /* 281/1170 */
+  flex: 1 1 250px;
+  /*width: 24.017094%;*/ /* 281/1170 */
 }
 .callback input {
   padding: 14px 14px 14px 41px;
@@ -55,7 +56,7 @@
   padding: 14px 43px;
 }
 .callback__request:hover {
-  box-shadow: 0 0 8px 0 #e7ad48;
+  box-shadow: 0 0 10px 0 #e7ad48;
 }
 
 .callback__name {
@@ -91,6 +92,7 @@
   transform: translate(0, -50%);
 }
 
+/* --------------------Our services----------------------------*/
 .services__container {
   margin-top: 203px;
   padding: 0 41px;
@@ -165,6 +167,7 @@
   line-height: 22px;
 }
 
+/* --------------------Our services----------------------------*/
 /* --------------------About----------------------------*/
 .about {
   background-color: #ffc155;
@@ -418,6 +421,9 @@
   color: #fff;
   border-radius: 3px;
 }
+.how__start:hover {
+  box-shadow: 0 0 10px 0 #e7ad48;
+}
 
 .how__list {
   padding: 0 15px;
@@ -624,6 +630,9 @@
   background-color: #ffbb42;
   border-radius: 3px;
   padding: 14px 43px;
+}
+.newsletter__subscribe:hover {
+  box-shadow: 0 0 10px 0 #e7ad48;
 }
 .newsletter__name {
   position: relative;
